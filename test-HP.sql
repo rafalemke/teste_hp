@@ -18,15 +18,15 @@ CREATE TABLE campanhas_ads (
 
 
 SELECT
-            campanha,
-            SUM(leads) AS total_leads
-        FROM
-            campanhas_ads
-        GROUP BY
-            campanha
-        ORDER BY
-            total_leads DESC
-        LIMIT 1;
+    campanha,
+    SUM(leads) AS total_leads
+FROM
+    campanhas_ads
+GROUP BY
+    campanha
+ORDER BY
+    total_leads DESC
+LIMIT 1;
 
 
 
